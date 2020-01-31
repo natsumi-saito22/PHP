@@ -1,47 +1,45 @@
 <?php
-echo "hello!!";
- 
- //課題１
-echo "\n";
-function twice($x){
-    $result = 2*$x;
-    return $result;
-}
- echo twice(6);
 
-// 課題２
-echo "\n";
-function f($a, $b){
-    $result = $a+$b;
-    return $result;
-}
- echo f(3,7);
+ //課題１
+    echo "\n";
+        function twice($x){
+            $result = 2*$x;
+            return $result;
+          }
+            echo twice(6);
+
+ // 課題２
+    echo "\n";
+        function f($a, $b){
+            $result = $a+$b;
+            return $result;
+          }
+             echo f(3,7);
  
  //課題３
-echo "\n";
- $arr = array(1,3,5,7,9);
+     echo "\n";
+        $arr = [1,3,5,7,9];
 
-function sum($arr){
-  $result = 1*3*5*7*9;
-  return $result;
-}
- echo sum($arr);
+        function sum($arr){
+           $result = $arr[0]*$arr[1]*$arr[2]*$arr[3]*$arr[4];
+           return $result;
+          }
+            echo sum($arr);
  
  //課題４
- echo "\n";
-$arr=[1,0,7,5];
- function max_array($arr){
-
-  $max_number =$arr[1];
- 
- foreach($arr as $a){
-     if ($max_number<$a){
-       $max_number=$a;
-   }
-  } 
-     return $max_number;
- }
-  echo max_array($arr);
+     echo "\n";
+        $arr=[1,0,7,5];
+        function max_array($arr){
+          $max_number =$arr[1];
+    
+        foreach($arr as $a){
+          if ($max_number<$a){
+              $max_number=$a;
+             }
+         } 
+           return $max_number;
+      }
+          echo max_array($arr);
  
  /*
  課題５
